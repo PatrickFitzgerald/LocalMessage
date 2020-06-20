@@ -1,0 +1,54 @@
+Feature ideas:
+	working files:
+		user settings
+		global user list (for friends list lookup)
+		online user list (for udp connections)
+	friends list:
+		add friends, inform that user
+		remove friends
+	group chats:
+		create group chats
+		add users to group chats
+		remove users from group chat
+		remove group chats
+	modes of communication (user):
+		text
+		images
+		screen share
+		video clips? since we will already have video capture figured out     
+		matlab specific content (variables, figures, etc)
+	modes of communication (technical):
+		send message (text/image/etc) to a chat (and thus to any participating users)
+		request all previous info (i.e. resume chat after crash, if other party did not crash)
+	export messages:
+		export whole conversations as text
+		save images
+	customization:
+		display names
+		avatar stand-in (we don't have profile pictures)
+			user selected color
+			user selected initials to display over their selected color     
+	message content:
+		sender username
+		timestamp
+		content type
+		content
+	diagnostics:
+		offer users (developers) to see the actions the app is
+		performing at that moment.
+		incorporate logger messages
+		upload/download rates, totals
+		number of active udp agents
+	remote force app shutdown:
+		if we need to update the app, and possibly someone is still
+		logged into it, the file will be locked (since there's only
+		one install)... we need a way to forcibly shut down all apps.
+		maybe save their chat state, close all related objects, reset
+		path, wait 30 mins, and restart app, restore state.
+
+Prospective features
+	Set figure icon
+		iconFilename = 'C:\Users\Patrick\Desktop\Local Message App\resources\test.png';
+		jIcon = javax.swing.ImageIcon(iconFilename);
+		j = get(mainFigure,'JavaFrame');
+		j.setFigureIcon(jIcon)
