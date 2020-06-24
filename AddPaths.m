@@ -2,7 +2,7 @@
 
 [installDir,~,~] = fileparts(mfilename('fullpath'));
 deepAddPaths = {'components','dependencies','utilities'};
-liteAddPaths = {};
+liteAddPaths = {'resources/logo/'};
 
 for deepInd = 1:numel(deepAddPaths)
 	path = fullfile(installDir,deepAddPaths{deepInd});
